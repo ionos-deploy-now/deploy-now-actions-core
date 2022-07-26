@@ -1,0 +1,17 @@
+{
+  "name": "@ionos-deploy-now/deploy-now-actions-core",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "packages/*"
+  ],
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ionos-deploy-now/deploy-now-actions-core.git"
+  }
+}
