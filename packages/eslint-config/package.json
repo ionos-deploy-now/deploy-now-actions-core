@@ -1,6 +1,6 @@
 {
   "name": "@ionos-deploy-now/eslint-config-actions",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "lint": "",
     "build": ""
@@ -18,7 +18,7 @@
     "prettier": "^2.7.1"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
