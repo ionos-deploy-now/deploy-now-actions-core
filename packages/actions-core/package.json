@@ -1,6 +1,6 @@
 {
   "name": "@ionos-deploy-now/actions-core",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "lint": "eslint src --ext .ts",
     "build": "tsc"
@@ -11,7 +11,7 @@
     "lib/**/*"
   ],
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
