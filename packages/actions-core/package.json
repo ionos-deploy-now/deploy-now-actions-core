@@ -1,0 +1,28 @@
+{
+  "name": "@ionos-deploy-now/actions-core",
+  "version": "0.0.1",
+  "scripts": {
+    "lint": "eslint src --ext .ts",
+    "build": "tsc"
+  },
+  "main": "lib/action.js",
+  "types": "lib/action.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ionos-deploy-now/deploy-now-actions-core.git"
+  },
+  "dependencies": {
+    "@actions/core": "1.9.0",
+    "@actions/github": "5.0.3"
+  },
+  "devDependencies": {
+    "typescript": "4.7.4",
+    "@types/node": "18.0.6"
+  }
+}

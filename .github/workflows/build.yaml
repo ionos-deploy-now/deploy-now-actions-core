@@ -1,0 +1,23 @@
+name: Build and lint code
+
+on:
+  push:
+    paths:
+      - 'packages/actions-core/**'
+
+jobs:
+  build-and-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: 'https://npm.pkg.github.com'
+      - name: Setup project
+        run: |
+          npm ci
+      - name: Lint and build code
+        run: |
+          npm run lint --workspace @ionos-deploy-now/actions-core
+          npm run build --workspace @ionos-deploy-now/actions-core

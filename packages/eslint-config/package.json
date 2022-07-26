@@ -1,0 +1,27 @@
+{
+  "name": "@ionos-deploy-now/eslint-config-actions",
+  "version": "0.0.1",
+  "scripts": {
+    "lint": "",
+    "build": ""
+  },
+  "description": "",
+  "main": "eslint.config.js",
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "prettier": "^2.7.1"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ionos-deploy-now/deploy-now-actions-core.git"
+  }
+}
