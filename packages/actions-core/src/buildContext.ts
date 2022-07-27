@@ -3,16 +3,16 @@ import * as github from '@actions/github';
 
 export default class BuildContext {
   required(key: keyof Context): string {
-    if (github[key] === '') {
+    if (github.context[key] === undefined) {
       throw new Error('Could not get context value ' + key);
     }
-    return typeof github[key] === 'function' ? github[key]() : github[key];
+    return github.context[key].toString();
   }
 
   optional(key: keyof Context): string | null {
-    if (github[key] === '') {
+    if (github.context[key] === undefined) {
       return null;
     }
-    return typeof github[key] === 'function' ? github[key]() : github[key];
+    return github.context[key].toString();
   }
 }
