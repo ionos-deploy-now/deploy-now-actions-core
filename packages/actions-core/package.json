@@ -2,7 +2,7 @@
   "name": "@ionos-deploy-now/actions-core",
   "version": "1.0.0",
   "scripts": {
-    "lint": "eslint src --ext .ts",
+    "lint": "eslint src --max-warnings=0 --ext .ts",
     "build": "tsc"
   },
   "main": "lib/action.js",
