@@ -12,8 +12,8 @@ export default class Action {
       action(configuration)
         .then((output) =>
           Object.entries(output).forEach(([key, value]) => {
-            console.log(`${key}: ${value}`);
-            core.setOutput(key, value);
+            console.log(`${key}: ${JSON.stringify(value)}`);
+            core.setOutput(key, JSON.stringify(value));
           })
         )
         .catch(this.handleError);
