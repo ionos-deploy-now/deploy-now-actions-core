@@ -5,7 +5,7 @@ import BuildContext from './buildContext';
 export default class Action {
   static run<I extends { [key: string]: any }, O extends { [key: string]: any }>(
     action: (configuration: I) => Promise<O>,
-    configurationSupplier: (input: Input, context: BuildContext) => I
+    configurationSupplier: (input: Input, context: BuildContext) => I,
   ) {
     try {
       const configuration = configurationSupplier(new Input(), new BuildContext());
@@ -14,7 +14,7 @@ export default class Action {
           Object.entries(output).forEach(([key, value]) => {
             console.log(`${key}: ${JSON.stringify(value)}`);
             core.setOutput(key, JSON.stringify(value));
-          })
+          }),
         )
         .catch(this.handleError);
     } catch (err) {
