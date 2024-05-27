@@ -1,6 +1,6 @@
 {
   "name": "@ionos-deploy-now/eslint-config-actions",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "lint": "",
     "build": ""
