@@ -1,6 +1,6 @@
 {
   "name": "@ionos-deploy-now/actions-core",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "scripts": {
     "lint": "eslint src --max-warnings=0 --ext .ts",
     "build": "tsc"
@@ -25,7 +25,7 @@
     "@types/node": "20.12.12",
     "typescript": "5.4.5"
   },
-  "engines" : {
+  "engines": {
     "node": "20.x"
   }
 }
