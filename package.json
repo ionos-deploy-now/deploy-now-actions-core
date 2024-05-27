@@ -13,5 +13,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ionos-deploy-now/deploy-now-actions-core.git"
+  },
+  "engines" : {
+    "node" : "20.x"
   }
 }
+
