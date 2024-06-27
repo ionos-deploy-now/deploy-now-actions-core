@@ -13,7 +13,7 @@ export default class Action {
         .then((output) =>
           Object.entries(output).forEach(([key, value]) => {
             console.log(`${key}: ${JSON.stringify(value)}`);
-            core.setOutput(key, JSON.stringify(value));
+            core.setOutput(key, value);
           }),
         )
         .catch(this.handleError);
