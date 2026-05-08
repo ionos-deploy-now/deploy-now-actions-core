@@ -8,14 +8,13 @@
   "author": "",
   "license": "ISC",
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ionos-deploy-now/deploy-now-actions-core.git"
+    "url": "git+https://github.com/ionos-deploy-now/deploy-now-actions-core.git"
   },
-  "engines" : {
-    "node" : "24.x"
+  "engines": {
+    "node": "24.x"
   }
 }
-
